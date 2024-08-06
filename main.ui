@@ -45,7 +45,7 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>Pomoc na każdą sytuację</string>
+    <string>Sytuacje beznadziejne</string>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -61,7 +61,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Sytuacje beznadziejne</string>
+    <string>Pomoc na każdą sytuację</string>
    </property>
    <property name="checkable">
     <bool>true</bool>
@@ -87,7 +87,7 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Choose your gold advice!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="textBrowser">
+  <widget class="QTextBrowser" name="Label">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -121,6 +121,16 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>Generate!</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>370</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
    </property>
   </widget>
  </widget>

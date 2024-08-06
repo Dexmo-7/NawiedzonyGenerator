@@ -10,19 +10,32 @@ class MyGenerator(QDialog):
         self.startMain()
 
     def startMain(self):
-        self.stackedLayout = QStackedLayout()
         self.setFixedSize(800, 600)
         self.label = QLabel(self)
         self.pixmap = QPixmap('background.png')
         self.label.setPixmap(self.pixmap)
         uic.loadUi('main.ui', self)
         self.setWindowTitle("Generator")
+        #Label.setText('Cosik')
+
+with open("udzielenie.txt", encoding='UTF-8') as u:
+    udzielenie = [line.rstrip() for line in u]
+
+with open("pomoc.txt", encoding='UTF-8') as u:
+    pomoc = [line.rstrip() for line in u]
+
+with open("beznadziejne.txt", encoding='UTF-8') as u:
+    beznadziejne = [line.rstrip() for line in u]
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
 
     demo = MyGenerator()
     demo.show()
+
+    print(udzielenie)
+    print(pomoc)
+    print(beznadziejne)
 
     try:
         sys.exit(app.exec_())
